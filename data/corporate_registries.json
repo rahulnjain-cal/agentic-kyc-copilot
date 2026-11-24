@@ -1,0 +1,420 @@
+{
+  "internal_crm_records": {
+    "UK-11204588": {
+      "entity_id": "ENT-TAKSHASHILA-001",
+      "canonical_name": "Takshashila Cloud Systems Ltd",
+      "registration_number": "UK-11204588",
+      "jurisdiction_iso": "GB",
+      "incorporation_date": "2021-03-14",
+      "registered_address": "22 Bishopsgate, London EC2N 4BQ, United Kingdom",
+      "sic_codes": ["62012", "62020"],
+      "prior_cdd_tier": "LOW",
+      "relationship_manager": "Megha Kulkarni",
+      "last_reviewed": "2025-11-10"
+    },
+    "UK-10884320": {
+      "entity_id": "ENT-MAURYA-003",
+      "canonical_name": "Maurya Logistics Group Ltd",
+      "registration_number": "UK-10884320",
+      "jurisdiction_iso": "GB",
+      "incorporation_date": "2019-06-21",
+      "registered_address": "14 Finsbury Square, London EC2A 1BR, United Kingdom",
+      "sic_codes": ["52290"],
+      "prior_cdd_tier": "STANDARD",
+      "relationship_manager": "Rohan Banerjee",
+      "last_reviewed": "2025-09-01"
+    }
+  },
+  "external_registries": [
+    {
+      "registry_source": "UK_COMPANIES_HOUSE",
+      "entity_id": "ENT-TAKSHASHILA-001",
+      "legal_name": "Takshashila Cloud Systems Ltd",
+      "aliases": ["Takshashila Cloud Systems Limited", "Takshashila Cloud Sys Ltd"],
+      "registration_number": "UK-11204588",
+      "jurisdiction_iso": "GB",
+      "status": "ACTIVE",
+      "incorporation_date": "2021-03-14",
+      "registered_address": "22 Bishopsgate, London EC2N 4BQ, United Kingdom",
+      "sic_codes": ["62012", "62020"],
+      "vat_number": "GB384729104",
+      "directors": [
+        {
+          "party_id": "IND-AARAV-01",
+          "full_name": "Aarav Deshmukh",
+          "role": "Director & UBO",
+          "dob": "1984-07-19",
+          "nationality": "GB",
+          "residential_address": "48 Kensington Park Road, London W11 3BU"
+        },
+        {
+          "party_id": "IND-MEERA-02",
+          "full_name": "Meera Iyer",
+          "role": "Director & UBO",
+          "dob": "1987-11-04",
+          "nationality": "GB",
+          "residential_address": "19 Clapham Common North Side, London SW4 0RQ"
+        }
+      ],
+      "ownership_edges": [
+        {
+          "parent_id": "IND-AARAV-01",
+          "parent_name": "Aarav Deshmukh",
+          "parent_type": "INDIVIDUAL",
+          "child_id": "ENT-TAKSHASHILA-001",
+          "child_name": "Takshashila Cloud Systems Ltd",
+          "equity_pct": 60.0,
+          "voting_pct": 60.0,
+          "jurisdiction_iso": "GB",
+          "verified": true
+        },
+        {
+          "parent_id": "IND-MEERA-02",
+          "parent_name": "Meera Iyer",
+          "parent_type": "INDIVIDUAL",
+          "child_id": "ENT-TAKSHASHILA-001",
+          "child_name": "Takshashila Cloud Systems Ltd",
+          "equity_pct": 40.0,
+          "voting_pct": 40.0,
+          "jurisdiction_iso": "GB",
+          "verified": true
+        }
+      ],
+      "financials": {
+        "annual_revenue_gbp": 4200000,
+        "ebitda_margin_pct": 24.5,
+        "debt_to_equity": 0.35,
+        "current_ratio": 2.4
+      },
+      "tax_profile": {
+        "fatca_classification": "Active NFFE",
+        "crs_tax_residency": ["GB"],
+        "hmrc_vat_verified": true
+      },
+      "legal_profile": {
+        "articles_status": "Standard Model Articles; no bearer shares",
+        "bearer_shares_allowed": false,
+        "trust_deed_present": false
+      }
+    },
+    {
+      "registry_source": "UK_COMPANIES_HOUSE",
+      "entity_id": "ENT-NALANDA-002",
+      "legal_name": "Nalanda Treasury Solutions Ltd",
+      "aliases": ["Nalanda Treasury Solns Limited", "Nalanda Treasury Solutions Limited"],
+      "registration_number": "UK-14098211",
+      "jurisdiction_iso": "GB",
+      "status": "ACTIVE",
+      "incorporation_date": "2022-05-09",
+      "registered_address": "1 Canada Square, Canary Wharf, London E14 5AB, United Kingdom",
+      "sic_codes": ["64999", "66190"],
+      "vat_number": "GB419082771",
+      "directors": [
+        {
+          "party_id": "IND-VIKRAMADITYA-01",
+          "full_name": "Vikramaditya Rao",
+          "role": "Ultimate Beneficial Owner",
+          "dob": "1976-01-22",
+          "nationality": "GB",
+          "residential_address": "7 Belgrave Place, London SW1X 8AL"
+        },
+        {
+          "party_id": "IND-CHITRANGADA-02",
+          "full_name": "Chitrangada Sen",
+          "role": "Managing Director & Class-B Voting Controller",
+          "dob": "1981-09-15",
+          "nationality": "GB",
+          "residential_address": "11 Holland Park Avenue, London W11 3RL"
+        }
+      ],
+      "ownership_edges": [
+        {
+          "parent_id": "ENT-SARASWATI-DE",
+          "parent_name": "Saraswati Ventures LLC",
+          "parent_type": "CORPORATE",
+          "child_id": "ENT-NALANDA-002",
+          "child_name": "Nalanda Treasury Solutions Ltd",
+          "equity_pct": 65.0,
+          "voting_pct": 39.0,
+          "jurisdiction_iso": "US-DE",
+          "verified": true
+        },
+        {
+          "parent_id": "IND-CHITRANGADA-02",
+          "parent_name": "Chitrangada Sen",
+          "parent_type": "INDIVIDUAL",
+          "child_id": "ENT-NALANDA-002",
+          "child_name": "Nalanda Treasury Solutions Ltd",
+          "equity_pct": 10.0,
+          "voting_pct": 51.0,
+          "jurisdiction_iso": "GB",
+          "verified": true,
+          "share_class": "Class-B Super-Voting"
+        },
+        {
+          "parent_id": "ENT-MINORITY-UK",
+          "parent_name": "Pataliputra Institutional Fund LP",
+          "parent_type": "CORPORATE",
+          "child_id": "ENT-NALANDA-002",
+          "child_name": "Nalanda Treasury Solutions Ltd",
+          "equity_pct": 25.0,
+          "voting_pct": 10.0,
+          "jurisdiction_iso": "GB",
+          "verified": true
+        },
+        {
+          "parent_id": "ENT-INDRAPRASTHA-KY",
+          "parent_name": "Indraprastha Holdings Ltd",
+          "parent_type": "CORPORATE",
+          "child_id": "ENT-SARASWATI-DE",
+          "child_name": "Saraswati Ventures LLC",
+          "equity_pct": 50.0,
+          "voting_pct": 50.0,
+          "jurisdiction_iso": "KY",
+          "verified": true
+        },
+        {
+          "parent_id": "IND-VIKRAMADITYA-01",
+          "parent_name": "Vikramaditya Rao",
+          "parent_type": "INDIVIDUAL",
+          "child_id": "ENT-INDRAPRASTHA-KY",
+          "child_name": "Indraprastha Holdings Ltd",
+          "equity_pct": 100.0,
+          "voting_pct": 100.0,
+          "jurisdiction_iso": "GB",
+          "verified": true
+        }
+      ],
+      "financials": {
+        "annual_revenue_gbp": 18500000,
+        "ebitda_margin_pct": 19.2,
+        "debt_to_equity": 1.1,
+        "current_ratio": 1.8
+      },
+      "tax_profile": {
+        "fatca_classification": "Passive NFFE (Reporting FI parent in KY/DE)",
+        "crs_tax_residency": ["GB", "US", "KY"],
+        "hmrc_vat_verified": true
+      },
+      "legal_profile": {
+        "articles_status": "Dual-class shares (Class-B carries 51% voting rights)",
+        "bearer_shares_allowed": false,
+        "trust_deed_present": false
+      }
+    },
+    {
+      "registry_source": "UK_COMPANIES_HOUSE",
+      "entity_id": "ENT-MAURYA-003",
+      "legal_name": "Maurya Logistics Group Ltd",
+      "aliases": ["Maurya Logistics Grp Limited", "Maurya Logistics Ltd"],
+      "registration_number": "UK-10884320",
+      "jurisdiction_iso": "GB",
+      "status": "ACTIVE",
+      "incorporation_date": "2019-06-21",
+      "registered_address": "14 Finsbury Square, London EC2A 1BR, United Kingdom",
+      "sic_codes": ["52290"],
+      "vat_number": "GB291044518",
+      "directors": [
+        {
+          "party_id": "IND-DAVID-MILLER-UK",
+          "full_name": "David Miller",
+          "role": "Director & UBO",
+          "dob": "1989-04-12",
+          "nationality": "GB",
+          "residential_address": "32 Richmond Hill, Richmond TW10 6QX"
+        },
+        {
+          "party_id": "IND-ANANYA-PATEL",
+          "full_name": "Ananya Patel",
+          "role": "Director & UBO",
+          "dob": "1986-08-30",
+          "nationality": "GB",
+          "residential_address": "88 Wimbledon Park Road, London SW18 5SH"
+        }
+      ],
+      "ownership_edges": [
+        {
+          "parent_id": "IND-DAVID-MILLER-UK",
+          "parent_name": "David Miller",
+          "parent_type": "INDIVIDUAL",
+          "child_id": "ENT-MAURYA-003",
+          "child_name": "Maurya Logistics Group Ltd",
+          "equity_pct": 55.0,
+          "voting_pct": 55.0,
+          "jurisdiction_iso": "GB",
+          "verified": true
+        },
+        {
+          "parent_id": "IND-ANANYA-PATEL",
+          "parent_name": "Ananya Patel",
+          "parent_type": "INDIVIDUAL",
+          "child_id": "ENT-MAURYA-003",
+          "child_name": "Maurya Logistics Group Ltd",
+          "equity_pct": 45.0,
+          "voting_pct": 45.0,
+          "jurisdiction_iso": "GB",
+          "verified": true
+        }
+      ],
+      "financials": {
+        "annual_revenue_gbp": 9400000,
+        "ebitda_margin_pct": 14.0,
+        "debt_to_equity": 0.65,
+        "current_ratio": 1.9
+      },
+      "tax_profile": {
+        "fatca_classification": "Active NFFE",
+        "crs_tax_residency": ["GB"],
+        "hmrc_vat_verified": true
+      },
+      "legal_profile": {
+        "articles_status": "Standard Model Articles",
+        "bearer_shares_allowed": false,
+        "trust_deed_present": false
+      }
+    },
+    {
+      "registry_source": "UK_COMPANIES_HOUSE",
+      "entity_id": "ENT-ASHOKA-004",
+      "legal_name": "Ashoka FinTech Ventures Ltd",
+      "aliases": ["Ashoka FinTech Ltd", "Ashoka Fintech Ventures Limited"],
+      "registration_number": "UK-12994012",
+      "jurisdiction_iso": "GB",
+      "status": "ACTIVE",
+      "incorporation_date": "2023-02-11",
+      "registered_address": "100 Liverpool Street, London EC2M 2AT, United Kingdom",
+      "sic_codes": ["64999"],
+      "vat_number": "GB509112384",
+      "directors": [
+        {
+          "party_id": "IND-KABIR-SHARMA",
+          "full_name": "Kabir Sharma",
+          "role": "Founder & UBO",
+          "dob": "1990-05-18",
+          "nationality": null,
+          "residential_address": null
+        }
+      ],
+      "ownership_edges": [
+        {
+          "parent_id": "IND-KABIR-SHARMA",
+          "parent_name": "Kabir Sharma",
+          "parent_type": "INDIVIDUAL",
+          "child_id": "ENT-ASHOKA-004",
+          "child_name": "Ashoka FinTech Ventures Ltd",
+          "equity_pct": 100.0,
+          "voting_pct": 100.0,
+          "jurisdiction_iso": "GB",
+          "verified": true
+        }
+      ],
+      "financials": {
+        "annual_revenue_gbp": 1250000,
+        "ebitda_margin_pct": 8.0,
+        "debt_to_equity": 0.2,
+        "current_ratio": 3.1
+      },
+      "tax_profile": {
+        "fatca_classification": "Active NFFE",
+        "crs_tax_residency": ["GB"],
+        "hmrc_vat_verified": true
+      },
+      "legal_profile": {
+        "articles_status": "Standard Model Articles",
+        "bearer_shares_allowed": false,
+        "trust_deed_present": false
+      }
+    },
+    {
+      "registry_source": "CAYMAN_ISLANDS_REGISTRY",
+      "entity_id": "ENT-KAUTILYA-005",
+      "legal_name": "Kautilya Offshore Energy Trading Ltd",
+      "aliases": ["Kautilya Energy Trading Limited", "Kautilya Maritime Energy Ltd"],
+      "registration_number": "KY-9981204",
+      "jurisdiction_iso": "KY",
+      "status": "ACTIVE",
+      "incorporation_date": "2020-10-03",
+      "registered_address": "Ugland House, South Church Street, George Town, Grand Cayman KY1-1104",
+      "sic_codes": ["46711", "50200"],
+      "vat_number": null,
+      "directors": [
+        {
+          "party_id": "IND-RAJAN-SINGH",
+          "full_name": "Rajan Pratap Singh",
+          "role": "Beneficial Owner & Former Deputy Energy Minister",
+          "dob": "1968-12-09",
+          "nationality": "IN",
+          "residential_address": "Villa 14, Palm Jumeirah, Dubai, UAE"
+        }
+      ],
+      "ownership_edges": [
+        {
+          "parent_id": "TRUST-MAYA-OFFSHORE",
+          "parent_name": "Maya Sovereign Discretionary Trust",
+          "parent_type": "OFFSHORE_TRUST",
+          "child_id": "ENT-KAUTILYA-005",
+          "child_name": "Kautilya Offshore Energy Trading Ltd",
+          "equity_pct": 60.0,
+          "voting_pct": 60.0,
+          "jurisdiction_iso": "VG",
+          "verified": false
+        },
+        {
+          "parent_id": "IND-RAJAN-SINGH",
+          "parent_name": "Rajan Pratap Singh",
+          "parent_type": "INDIVIDUAL",
+          "child_id": "ENT-KAUTILYA-005",
+          "child_name": "Kautilya Offshore Energy Trading Ltd",
+          "equity_pct": 40.0,
+          "voting_pct": 40.0,
+          "jurisdiction_iso": "AE",
+          "verified": true
+        }
+      ],
+      "financials": {
+        "annual_revenue_gbp": 62000000,
+        "ebitda_margin_pct": 11.4,
+        "debt_to_equity": 2.9,
+        "current_ratio": 0.95
+      },
+      "tax_profile": {
+        "fatca_classification": "Non-Participating Offshore Entity (Unverified)",
+        "crs_tax_residency": ["KY", "VG"],
+        "hmrc_vat_verified": false
+      },
+      "legal_profile": {
+        "articles_status": "Offshore trust deed lacks certified settlor/beneficiary schedule; bearer share clause not formally repealed",
+        "bearer_shares_allowed": true,
+        "trust_deed_present": true
+      }
+    },
+    {
+      "registry_source": "UK_COMPANIES_HOUSE",
+      "entity_id": "ENT-CHOLA-A",
+      "legal_name": "Chola Global Holdings Ltd",
+      "aliases": ["Chola Global Hldgs Ltd"],
+      "registration_number": "UK-09111201",
+      "jurisdiction_iso": "GB",
+      "status": "ACTIVE",
+      "incorporation_date": "2018-04-01",
+      "registered_address": "10 Moorgate, London EC2R 6DA, United Kingdom",
+      "sic_codes": ["70100"],
+      "directors": [],
+      "ownership_edges": []
+    },
+    {
+      "registry_source": "UK_COMPANIES_HOUSE",
+      "entity_id": "ENT-CHOLA-B",
+      "legal_name": "Chola Global Holdings UK Ltd",
+      "aliases": ["Chola Global Holdings"],
+      "registration_number": "UK-09111299",
+      "jurisdiction_iso": "GB",
+      "status": "ACTIVE",
+      "incorporation_date": "2020-08-15",
+      "registered_address": "55 Baker Street, London W1U 8EW, United Kingdom",
+      "sic_codes": ["70100"],
+      "directors": [],
+      "ownership_edges": []
+    }
+  ]
+}

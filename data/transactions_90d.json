@@ -1,0 +1,46 @@
+{
+  "ENT-TAKSHASHILA-001": {
+    "window_days": 90,
+    "expected_monthly_volume_gbp": 350000,
+    "actual_90d_volume_gbp": 1020000,
+    "cash_wire_pct": 2.0,
+    "prior_90d_cash_wire_gbp": 20000,
+    "current_90d_cash_wire_gbp": 20400,
+    "high_risk_corridor_txns": 0,
+    "counterparty_geographies": ["GB", "IE", "DE"],
+    "summary": "Recurring enterprise B2B SaaS subscription inflows consistent with UK software vendor profile."
+  },
+  "ENT-NALANDA-002": {
+    "window_days": 90,
+    "expected_monthly_volume_gbp": 1500000,
+    "actual_90d_volume_gbp": 4650000,
+    "cash_wire_pct": 8.0,
+    "prior_90d_cash_wire_gbp": 350000,
+    "current_90d_cash_wire_gbp": 372000,
+    "high_risk_corridor_txns": 1,
+    "counterparty_geographies": ["GB", "US", "KY"],
+    "summary": "Cross-border intercompany treasury settlements aligned with UK/DE/KY group structure; minor Cayman dividend transfer noted."
+  },
+  "ENT-MAURYA-003": {
+    "window_days": 90,
+    "expected_monthly_volume_gbp": 780000,
+    "actual_90d_volume_gbp": 2290000,
+    "cash_wire_pct": 4.0,
+    "prior_90d_cash_wire_gbp": 88000,
+    "current_90d_cash_wire_gbp": 91600,
+    "high_risk_corridor_txns": 0,
+    "counterparty_geographies": ["GB", "NL", "FR"],
+    "summary": "Domestic and EU freight invoicing consistent with logistics SIC 52290."
+  },
+  "ENT-KAUTILYA-005": {
+    "window_days": 90,
+    "expected_monthly_volume_gbp": 4000000,
+    "actual_90d_volume_gbp": 24800000,
+    "cash_wire_pct": 64.0,
+    "prior_90d_cash_wire_gbp": 3100000,
+    "current_90d_cash_wire_gbp": 15500000,
+    "high_risk_corridor_txns": 17,
+    "counterparty_geographies": ["KY", "VG", "AE", "PA"],
+    "summary": "Unexplained 400% surge in high-value cash wires across offshore transit corridors inconsistent with declared charter schedules."
+  }
+}

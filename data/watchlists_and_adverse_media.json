@@ -1,0 +1,78 @@
+{
+  "watchlists": [
+    {
+      "entry_id": "WL-PEP-9001",
+      "subject_name": "Rajan Pratap Singh",
+      "aliases": ["R. P. Singh", "Rajan P. Singh"],
+      "category": "PEP",
+      "tier": "TIER_1_FOREIGN_PEP",
+      "dob": "1968-12-09",
+      "nationality": "IN",
+      "list_source": "LSEG_WORLD_CHECK_PEP",
+      "summary": "Former Deputy Minister of Energy Infrastructure (2016-2023); Tier-1 politically exposed person with sovereign energy contracting influence.",
+      "source_uri": "https://watchlists.example.internal/lseg/WL-PEP-9001"
+    },
+    {
+      "entry_id": "WL-SANC-4022",
+      "subject_name": "Kautilya Offshore Energy Trading Ltd",
+      "aliases": ["Kautilya Maritime Energy Ltd"],
+      "category": "SANCTIONS",
+      "tier": "SANCTIONS_ADJACENCY_WATCH",
+      "jurisdiction_iso": "KY",
+      "list_source": "OFAC_UK_HMT_MARITIME_ADVISORY",
+      "summary": "Flagged in maritime ship-to-ship transshipment advisory linked to sanctioned crude corridors.",
+      "source_uri": "https://watchlists.example.internal/ofac/WL-SANC-4022"
+    },
+    {
+      "entry_id": "WL-TIMEOUT-ALIAS",
+      "subject_name": "Timeout Alias Trigger",
+      "aliases": ["__SIMULATE_TIMEOUT__"],
+      "category": "SANCTIONS",
+      "tier": "TEST_TIMEOUT",
+      "list_source": "SIMULATED_CONNECTOR",
+      "summary": "Synthetic test entry used to verify guided timeout recovery.",
+      "source_uri": "https://watchlists.example.internal/test/timeout"
+    }
+  ],
+  "adverse_media_corpus": [
+    {
+      "article_id": "AM-2023-441",
+      "subject_name": "David Miller",
+      "mentioned_dob": "1964-02-03",
+      "mentioned_age_in_2026": 62,
+      "mentioned_jurisdiction": "US-OH",
+      "mentioned_company": "Buckeye Municipal Paving Corp",
+      "category": "ADVERSE_MEDIA_FRAUD",
+      "language": "en",
+      "headline": "Former Ohio contractor David Miller (62) sentenced for municipal paving bid-rigging fraud",
+      "snippet": "David Miller, born Feb 3, 1964, former owner of Buckeye Municipal Paving Corp in Cleveland, Ohio, was convicted of municipal procurement fraud.",
+      "source_uri": "https://news-archive.example.org/us-ohio/AM-2023-441"
+    },
+    {
+      "article_id": "AM-2026-882",
+      "subject_name": "Kautilya Offshore Energy Trading Ltd",
+      "linked_individuals": ["Rajan Pratap Singh"],
+      "mentioned_dob": "1968-12-09",
+      "mentioned_jurisdiction": "KY",
+      "mentioned_company": "Kautilya Offshore Energy Trading Ltd",
+      "category": "ADVERSE_MEDIA_SANCTIONS_EVASION",
+      "language": "fr",
+      "original_headline": "Enquete maritime: Kautilya Offshore Energy Trading soupconnee de transbordement sous sanctions",
+      "translated_headline": "Maritime probe: Kautilya Offshore Energy Trading suspected of sanctions-evading ship-to-ship transshipment",
+      "snippet": "European maritime monitors linked tankers chartered by Kautilya Offshore Energy Trading Ltd and beneficial owner Rajan Pratap Singh (born 1968) to dark-fleet AIS spoofing.",
+      "source_uri": "https://maritime-intel.example.org/eu/AM-2026-882"
+    },
+    {
+      "article_id": "AM-2025-119",
+      "subject_name": "Sanjay Verma",
+      "mentioned_dob": null,
+      "mentioned_jurisdiction": null,
+      "mentioned_company": null,
+      "category": "ADVERSE_MEDIA_AML",
+      "language": "en",
+      "headline": "Investigators question broker named Sanjay Verma in regional trade-finance inquiry",
+      "snippet": "Press report cites a broker named Sanjay Verma without date of birth, company affiliation, or country of residence.",
+      "source_uri": "https://news-archive.example.org/global/AM-2025-119"
+    }
+  ]
+}

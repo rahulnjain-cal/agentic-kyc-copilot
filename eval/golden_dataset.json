@@ -1,0 +1,154 @@
+{
+  "suite_name": "Arthashastra Commercial KYC 5-Case Golden Evaluation Dataset",
+  "rubric_target": "AI in 5 Days AgentOps Code Review Matrix (95/95)",
+  "cases": [
+    {
+      "case_id": "GOLDEN-CASE-01",
+      "name": "Fast-Track Low Risk UK SaaS Vendor",
+      "trigger_type": "NEW_ONBOARDING",
+      "applicant_input": {
+        "submitted_name": "Takshashila Cloud Systems Limited",
+        "registration_number": "UK-11204588",
+        "jurisdiction_iso": "GB",
+        "uploaded_document": {
+          "document_id": "DOC-TAK-01",
+          "document_type": "PROOF_OF_ADDRESS",
+          "dpi": 300,
+          "blur_score": 0.05,
+          "age_days": 14,
+          "entity_name_on_doc": "Takshashila Cloud Systems Ltd"
+        }
+      },
+      "expected": {
+        "canonical_name": "Takshashila Cloud Systems Ltd",
+        "expected_ubo_names": ["Aarav Deshmukh", "Meera Iyer"],
+        "max_risk_score": 35,
+        "expected_risk_tier": "LOW",
+        "hitl_required": false,
+        "rfi_dispatched": false,
+        "min_confidence": 0.85,
+        "required_tools_called": [
+          "assess_uploaded_document_quality_and_classify",
+          "execute_silent_entity_pre_lookup",
+          "query_external_corporate_registry_mcp",
+          "resolve_probabilistic_entity_golden_record",
+          "calculate_cascading_ubo_ownership_rollup",
+          "screen_entity_and_ubos_watchlists",
+          "evaluate_multilingual_adverse_media_relevance",
+          "audit_profile_against_transactions_and_policy_rag"
+        ]
+      }
+    },
+    {
+      "case_id": "GOLDEN-CASE-02",
+      "name": "Multi-Tier Cross-Border UBO & Class-B Voting Override",
+      "trigger_type": "NEW_ONBOARDING",
+      "applicant_input": {
+        "submitted_name": "Nalanda Treasury Solns Limited",
+        "registration_number": "UK-14098211",
+        "jurisdiction_iso": "GB",
+        "uploaded_document": {
+          "document_id": "DOC-NAL-02",
+          "document_type": "INCORPORATION_CERTIFICATE",
+          "dpi": 240,
+          "blur_score": 0.08,
+          "age_days": 30,
+          "entity_name_on_doc": "Nalanda Treasury Solutions Ltd"
+        }
+      },
+      "expected": {
+        "canonical_name": "Nalanda Treasury Solutions Ltd",
+        "expected_ubo_names": ["Vikramaditya Rao", "Chitrangada Sen"],
+        "vikramaditya_effective_equity_pct": 32.5,
+        "chitrangada_control_mechanism": "VOTING_RIGHTS_OVERRIDE",
+        "parallel_specialists_invoked": ["LEGAL", "TAX_FATCA_CRS", "CREDIT"],
+        "citation_critique_passed": true
+      }
+    },
+    {
+      "case_id": "GOLDEN-CASE-03",
+      "name": "Adverse Media False-Positive Suppression (David Miller 25y DOB Gap)",
+      "trigger_type": "PERIODIC_REVIEW",
+      "applicant_input": {
+        "submitted_name": "Maurya Logistics Grp Limited",
+        "registration_number": "UK-10884320",
+        "jurisdiction_iso": "GB",
+        "uploaded_document": {
+          "document_id": "DOC-MAU-03",
+          "document_type": "PROOF_OF_ADDRESS",
+          "dpi": 300,
+          "blur_score": 0.04,
+          "age_days": 20,
+          "entity_name_on_doc": "Maurya Logistics Group Ltd"
+        }
+      },
+      "expected": {
+        "canonical_name": "Maurya Logistics Group Ltd",
+        "suppressed_false_positive_subject": "David Miller",
+        "expected_disposition": "SUPPRESSED_FALSE_POSITIVE",
+        "max_risk_score": 35,
+        "expected_risk_tier": "LOW",
+        "hitl_required": false
+      }
+    },
+    {
+      "case_id": "GOLDEN-CASE-04",
+      "name": "Intake Dropout Prevention & Targeted RFI Only for Missing/Expired Items",
+      "trigger_type": "NEW_ONBOARDING",
+      "applicant_input": {
+        "submitted_name": "Ashoka Fintech Ventures Limited",
+        "registration_number": "UK-12994012",
+        "jurisdiction_iso": "GB",
+        "uploaded_document": {
+          "document_id": "DOC-ASH-04",
+          "document_type": "PROOF_OF_ADDRESS",
+          "dpi": 110,
+          "blur_score": 0.45,
+          "age_days": 145,
+          "entity_name_on_doc": "Ashoka FinTech Ventures Ltd"
+        }
+      },
+      "expected": {
+        "doc_status": "RECOVERABLE_ERROR",
+        "session_state": "AWAITING_CLIENT_RFI",
+        "silent_lookup_prefilled_fields": ["legal_name", "incorporation_date", "registered_address", "sic_codes"],
+        "rfi_requested_fields": ["fresh_proof_of_address_pdf", "ubo_nationality"],
+        "edd_halted": true
+      }
+    },
+    {
+      "case_id": "GOLDEN-CASE-05",
+      "name": "High-Risk Tier-1 PEP + Sanctions Transshipment + 400% Cash Spike + Mandatory HITL Freeze",
+      "trigger_type": "NEW_ONBOARDING",
+      "applicant_input": {
+        "submitted_name": "Kautilya Energy Trading Limited",
+        "registration_number": "KY-9981204",
+        "jurisdiction_iso": "KY",
+        "uploaded_document": {
+          "document_id": "DOC-KAU-05",
+          "document_type": "TRUST_DEED_AND_ARTICLES",
+          "dpi": 300,
+          "blur_score": 0.06,
+          "age_days": 12,
+          "entity_name_on_doc": "Kautilya Offshore Energy Trading Ltd",
+          "applicant_contact_pii_sample": "Contact Rajan Singh DOB 1968-12-09 Passport AB1234567 NINo QQ123456C email rajan.singh@kautilya-energy.ky IBAN GB29NWBK60161331926819"
+        }
+      },
+      "expected": {
+        "min_risk_score": 85,
+        "expected_risk_tier": "HIGH_EDD",
+        "opaque_layer_detected": true,
+        "hitl_required": true,
+        "hitl_status": "BLOCKED_HITL",
+        "pii_must_not_appear_in_logs": [
+          "AB1234567",
+          "QQ123456C",
+          "1968-12-09",
+          "rajan.singh@kautilya-energy.ky",
+          "GB29NWBK60161331926819"
+        ],
+        "citation_critique_passed": true
+      }
+    }
+  ]
+}
